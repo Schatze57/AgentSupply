@@ -5,7 +5,6 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   line-height: 1.4rem;
-  font-size: 1rem;
 }
 .topper {
   background-color: black;
@@ -24,7 +23,7 @@ body {
 .topper .container {
   display: flex;
   align-items: center;
-  padding: 12px 0 12px 0.5rem;
+  padding: .66rem 0 .66rem 0.5rem;
 }
 .main-banner {
   background: url(../images/moto.jpeg);
@@ -45,8 +44,8 @@ h1, h4 {
 }
 .title h1 {
   font-size: 2rem;
-  line-height: 1.2rem;
   margin: 0.25rem 0;
+  line-height: 1.6rem;
 }
 nav {
   background-color: firebrick;
@@ -109,4 +108,56 @@ footer {
   color: white;
   padding: 5rem 0;
   margin-top: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 0.88rem;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+  .title {
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+  }
+  .title h4 {
+    font-size: 0.77rem;
+  }
+  .title h1 {
+    font-size: 1rem;
+  }
+  .watch {
+    display: none;
+  }
+  .product {
+    width: 90%;
+    margin:auto;
+  }
+  .products,
+  .contact {
+    flex-wrap: wrap;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer {
+    text-align: center;
+  }
 }
